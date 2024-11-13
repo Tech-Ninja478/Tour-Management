@@ -20,7 +20,7 @@ const ServiceData = [
     {
         imgUrl: customizationImg,
         title: 'Customization',
-        desc: 'Help to customize your Holiday',
+        desc: 'Help to customize your Holiday and make it memorable for you',
     },
 ];
 

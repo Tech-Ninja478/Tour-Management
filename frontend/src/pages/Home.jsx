@@ -8,6 +8,7 @@ import heroVideo from '../assets/images/hero-video.mp4'
 import worldImg from '../assets/images/world.png'
 import Subtitle from '../shared/Subtitle'
 
+import FeaturedTourList from '../components/Featured-Tours/FeaturedTourList'
 import ServiceList from '../services/ServiceList'
 import SearchBar from '../shared/SearchBar'
 
@@ -62,6 +63,19 @@ const Home = () => {
                 </Row>
             </Container>
         </section>
+        {/* =============== Featured Tours Section Start =============== */}
+        <section>
+            <Container>
+                <Row>
+                    <Col lg='12' className="mb-5">
+                        <Subtitle subtitle={'Explore'} />
+                        <h2 className="featured__tour-title">Our Featured Tours</h2>
+                    </Col>
+                    <FeaturedTourList />
+                </Row>
+            </Container>
+        </section>
+        {/* =============== Featured Tours Section End =============== */}
     </>
 }
 
