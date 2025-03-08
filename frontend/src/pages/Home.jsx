@@ -2,10 +2,13 @@ import React from 'react'
 import '../styles/home.css'
 
 import { Col, Container, Row } from 'reactstrap'
+import experienceImg from '../assets/images/experience.png'
 import heroImg from '../assets/images/hero-img01.jpg'
 import heroImg02 from '../assets/images/hero-img02.jpg'
 import heroVideo from '../assets/images/hero-video.mp4'
 import worldImg from '../assets/images/world.png'
+
+
 import Subtitle from '../shared/Subtitle'
 
 import FeaturedTourList from '../components/Featured-Tours/FeaturedTourList'
@@ -76,6 +79,48 @@ const Home = () => {
             </Container>
         </section>
         {/* =============== Featured Tours Section End =============== */}
+
+        {/* =============== Experience Section Start ================= */}
+
+        <section>
+            <Container>
+                <Row>
+                    <Col lg='6'>
+                        <div className="experience_content">
+                            <Subtitle subtitle={'Experience'}></Subtitle>
+
+                            <h2>With our entire range of Experience, <br />we wish to serve you</h2>
+                            <p>We bring forward to you our entire team <br />
+                                With immense experience in each and every field
+                            </p>
+                        </div>
+
+                        <div className="counter__wrapper d-flex align-items-center gap-5">
+                            <div className="counter__box">
+                                <span>5k+</span>
+                                <h6>Successfull Tours</h6>
+                            </div>
+                            <div className="counter__box">
+                                <span>1.5k+</span>
+                                <h6>Regular Clients</h6>
+                            </div>
+                            <div className="counter__box">
+                                <span>8</span>
+                                <h6>Years Experience</h6>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col lg='6'>
+                        <div className="experience_img">
+                            <img src={experienceImg} alt="Experience" />
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </section>
+
+
+        {/* =============== Experience Section Start ================= */}
     </>
 }
 
