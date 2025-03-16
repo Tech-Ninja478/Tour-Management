@@ -12,6 +12,7 @@ import worldImg from '../assets/images/world.png'
 import Subtitle from '../shared/Subtitle'
 
 import FeaturedTourList from '../components/Featured-Tours/FeaturedTourList'
+import MasonryImagesGallery from '../components/Image_Gallery/MasonryImagesGallery'
 import ServiceList from '../services/ServiceList'
 import SearchBar from '../shared/SearchBar'
 
@@ -121,6 +122,22 @@ const Home = () => {
 
 
         {/* =============== Experience Section Start ================= */}
+
+        {/* =============== Gallery Section Start ==================== */}
+        <section>
+            <Container>
+                <Row>
+                    <Col lg='12'>
+                        <Subtitle subtitle={'Gallery'} />
+                        <h2 className='gallery__title'>Visit our Customers' Tour Gallery</h2>
+                    </Col>
+                    <Col lg='12'>
+                        <MasonryImagesGallery />
+                    </Col>
+                </Row>
+            </Container>
+        </section>
+        {/* =============== Gallery Section Start ==================== */}
     </>
 }
 
