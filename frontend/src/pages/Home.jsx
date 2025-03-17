@@ -13,7 +13,9 @@ import Subtitle from '../shared/Subtitle'
 
 import FeaturedTourList from '../components/Featured-Tours/FeaturedTourList'
 import MasonryImagesGallery from '../components/Image_Gallery/MasonryImagesGallery'
+import Testimonials from '../components/Testimonial/Testimonials'
 import ServiceList from '../services/ServiceList'
+import Newsletter from '../shared/Newsletter'
 import SearchBar from '../shared/SearchBar'
 
 
@@ -137,7 +139,24 @@ const Home = () => {
                 </Row>
             </Container>
         </section>
-        {/* =============== Gallery Section Start ==================== */}
+        {/* =============== Gallery Section End ==================== */}
+
+        {/* =============== Testimonial Section Start ============== */}
+        <section>
+            <Container>
+                <Row>
+                    <Col lg='12'>
+                        <Subtitle subtitle={'Love from Customers'} />
+                        <h2 className='testimonial__title'>What our Customers say about us?</h2>
+                    </Col>
+                    <Col lg='12'>
+                        <Testimonials />
+                    </Col>
+                </Row>
+            </Container>
+        </section>
+        {/* =============== Testimonial Section End ================ */}
+        <Newsletter />
     </>
 }
 
