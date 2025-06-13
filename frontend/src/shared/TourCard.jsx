@@ -6,7 +6,10 @@ import "./tour-card.css"
 
 const TourCard = ({ tour }) => {
 
-    const { id, title, city, photo, price, featured, avgRating, reviews } = tour
+    const { id, title, city, photo, price, reviews } = tour
+
+    const totalRating = reviews?.reduce((acc, item) => acc + item.rating, 0)
+    const avgRating = totalRating ? (totalRating / reviews.length).toFixed(1) : 0
 
     return (
         <div className='tour__card'>
